@@ -1,0 +1,252 @@
+.main-container{
+    background-image:linear-gradient(to right, rgb(197, 197, 197) -200%, white 100%);
+    width: 100%;
+    min-width: 250px;
+    
+    .sidebar-container{
+        background-color: white;
+        height: 100vh;
+        
+        .sidebar-navbar{
+            background-color: black;
+            height: 100vh;
+            padding: 20px;
+
+            .svg-container{
+                aspect-ratio: 1;
+                background-color: black;
+                border-radius: 50%;
+                padding: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                svg{
+                    width: 17px;
+                }
+
+                &:hover{
+                    background-color: #333;
+                }
+
+            }.active{
+                background-color: #333;
+            }
+            
+        }
+
+        .sidebar-menu{
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+
+            h1{
+                margin: auto 0;
+            }
+
+            .plus-container{
+                background-color: #e4e4e4;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+
+                svg{
+                    width: 20px;
+                }
+            }
+
+            .menu-items{
+                border-left: 3px solid #e4e4e4;
+                color: #777;
+                font-size: clamp(0.8rem,calc(0.4rem + 2vw), 0.9rem);
+
+                .menu-item{
+                    position: relative;
+                    z-index: 1;
+
+                    a{
+                        margin:0 20px;
+                        padding: 7px 15px;
+                        background-color: white;
+                        border-radius: 30px;
+
+                        &:hover{
+                            background-color: #f0f0f0;
+                            font-weight: 700;
+                            color: #333;
+                        }
+                    }.active{
+                        background-color: #f0f0f0;
+                        font-weight: 700;
+                        color: #333;
+                    }
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0%;
+                        top: 50%;
+                        transform: translate(0%,-50%);
+                        background-color: #e4e4e4;
+                        height: 2px;
+                        width: 7%;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+
+    .tasks-section{
+        height: 100vh;
+
+        .tasks-header{
+            background-color: white;
+            font-size: clamp(0.8rem,calc(0.3rem + 2vw), 1rem);
+
+            .date-container{
+                color: #888;
+                font-size: clamp(0.6rem,calc(0.3rem + 2vw), 0.8rem);
+            }
+
+            .profile-container{
+                max-width: 30px;
+                min-width: 30px;
+            }
+        }
+
+        .tasks-body{
+            background-image:linear-gradient(to bottom, white 7%, transparent 113%);
+
+            .add-task{
+                border-bottom: 2px solid #e4e4e4;
+                position: relative;
+
+                .view-container{
+                    width: fit-content;
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    font-size: clamp(0.6rem,calc(0.3rem + 2vw), 0.8rem);
+
+                    &::before{
+                        content: "";
+                        width: 13%;
+                        height: 2px;
+                        background-color: #333;
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                    }
+                }
+
+                .button-contianer{
+                    background-color: black;
+                    color: white;
+                    border-radius: 30px;
+                    padding: 7px 20px;
+                    margin-bottom: 5px;
+                    font-size: clamp(0.6rem,calc(0.3rem + 2vw), 0.8rem);
+
+                    .plus-container{
+                        background-color: #ffffff;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 18px;
+                        aspect-ratio: 1;
+                        cursor: pointer;
+        
+                        svg{
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+
+            .tasks-body-header{
+                position: relative;
+                z-index: 1;
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0%;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #e4e4e4;
+                    z-index: -1;
+                }
+
+                span{
+                    background-color: $green-200;
+                    color:white;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    padding: 7px 20px;
+                }
+            }
+
+            .task-list{
+
+                .header{
+                    color: #999;
+                }
+
+                .task-card{
+                    border: 2px solid #d3d3d3;
+                    border-radius: 30px;
+                    padding: 8px;
+
+                    .circle-box{
+                        background-color:$purple-500 ;
+                        border-radius: 50%;
+                        width: 20px;
+                        aspect-ratio: 1;
+                        z-index: 1;
+                        position: relative;
+
+                        &::before{
+                            content: "";
+                            z-index: -1;
+                            border-radius: 50%;
+                            background-color: white;
+                            position: absolute;
+                            left: 4px;
+                            top: 4px;
+                            right: 4px;
+                            bottom: 4px;
+                        }
+                    }
+
+                    .active-task{
+                        background-color: $green-200;
+                        padding: 5px 20px;
+                        border-radius: 30px;
+                        color: white;
+                    }
+
+                    .pending-task{
+                        background-color: $orange-200;
+                        padding: 5px 20px;
+                        border-radius: 30px;
+                        color: white;
+                    }
+
+                    .complete-task{
+                        background-color: $red-200;
+                        padding: 5px 20px;
+                        border-radius: 30px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
