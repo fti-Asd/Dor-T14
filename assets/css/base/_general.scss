@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: "redhat";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+
+    :focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+input {
+    :focus {
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+}
