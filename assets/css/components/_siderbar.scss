@@ -65,22 +65,25 @@
                     position: relative;
                     z-index: 1;
 
-                    a{
-                        margin:0 20px;
+                    a {
+                        margin: 0 20px;
                         padding: 7px 15px;
                         background-color: white;
                         border-radius: 30px;
-
-                        &:hover{
-                            background-color: #f0f0f0;
-                            font-weight: 700;
-                            color: #333;
+                      
+                        &:hover {
+                          background-color: #f0f0f0;
+                          font-weight: 700;
+                          color: #333;
                         }
-                    }.active{
-                        background-color: #f0f0f0;
-                        font-weight: 700;
-                        color: #333;
-                    }
+                      
+                        &.active {
+                          background-color: #f0f0f0;
+                          font-weight: 700;
+                          color: #333;
+                        }
+                      }
+                      
 
                     &::before{
                         content: "";

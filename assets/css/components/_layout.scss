@@ -92,8 +92,24 @@
                     z-index: -1;
                 }
 
-                span{
+                .active-task{
                     background-color: $green-200;
+                    color:white;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    padding: 7px 20px;
+                }
+
+                .complete-task{
+                    background-color: $red-200;
+                    color:white;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    padding: 7px 20px;
+                }
+
+                .pending-task{
+                    background-color: $orange-200;
                     color:white;
                     font-weight: bold;
                     border-radius: 30px;
