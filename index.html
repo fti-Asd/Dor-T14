@@ -22,8 +22,7 @@
         <div class="main-container">
             <div class="row g-0">
                 <div class="col-lg-3">
-                    
-                    <div class="sidebar-container">
+                    <div class="sidebar-container d-none d-lg-block">
                         <div class="row g-0">
                             <div class="col-2">
                                 <div class="sidebar-navbar d-flex flex-column justify-content-between align-items-center">
@@ -101,10 +100,103 @@
     
                 <div class="col-lg-9">
                     <div class="tasks-section">
-                        <div class="tasks-header d-flex justify-content-between align-items-center p-4 bg-white">
-                            <p class="fw-bolder">Welcome back, Vincent 👋</p>
+                        <div class="tasks-header d-sm-flex justify-content-between align-items-center p-4 bg-white">
+                            <p class="fw-bolder d-none d-lg-block my-auto">Welcome back, Vincent 👋</p>
                             
-                            <div class="d-flex align-items-center gap-2">
+                            <nav class="navbar bg-white d-lg-none p-0 m-0">
+                                <div class="container-fluid justify-content-start p-0 m-0">
+                                  <button class="navbar-toggler border border-0 p-0 m-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
+
+                                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="sidebar-container">
+                                        <div class="row g-0">
+                                            <div class="col-2">
+                                                <div class="sidebar-navbar d-flex flex-column justify-content-between align-items-center">
+                                                    <div class="d-flex flex-column align-items-center gap-3">
+                                                        <div class="svg-container">
+                                                            <svg width="34" height="6" viewBox="0 0 34 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="31" cy="3" r="3" fill="white" fill-opacity="0.2"/>
+                                                                <circle cx="17" cy="3" r="3" fill="white" fill-opacity="0.4"/>
+                                                                <circle cx="3" cy="3" r="3" fill="white"/>
+                                                            </svg>
+                                                        </div>
+                                                        
+                                                        <div class="svg-container">
+                                                            <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M24 8.88887L14 4V5.46663L22.5 9.62219L14 13.7777V26L24 21.1111V8.88887Z" fill="white"/>
+                                                                <path d="M0 17.1111L10 22V20.5334L1.49996 16.3778L10 12.2223V0L0 4.88888V17.1111Z" fill="white"/>
+                                                            </svg>
+                                                        </div>
+                                                        
+                                                        <div class="svg-container active">
+                                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M2.75 4.58333C2.75 3.57081 3.57081 2.75 4.58333 2.75H8.25C9.26252 2.75 10.0833 3.57081 10.0833 4.58333V8.25C10.0833 9.26252 9.26252 10.0833 8.25 10.0833H4.58333C3.57081 10.0833 2.75 9.26252 2.75 8.25V4.58333ZM8.25 4.58333H4.58333V8.25H8.25V4.58333ZM11.9167 4.58333C11.9167 3.57081 12.7375 2.75 13.75 2.75H17.4167C18.4292 2.75 19.25 3.57081 19.25 4.58333V8.25C19.25 9.26252 18.4292 10.0833 17.4167 10.0833H13.75C12.7375 10.0833 11.9167 9.26252 11.9167 8.25V4.58333ZM17.4167 4.58333H13.75V8.25H17.4167V4.58333ZM2.75 13.75C2.75 12.7375 3.57081 11.9167 4.58333 11.9167H8.25C9.26252 11.9167 10.0833 12.7375 10.0833 13.75V17.4167C10.0833 18.4292 9.26252 19.25 8.25 19.25H4.58333C3.57081 19.25 2.75 18.4292 2.75 17.4167V13.75ZM8.25 13.75H4.58333V17.4167H8.25V13.75ZM11.9167 13.75C11.9167 12.7375 12.7375 11.9167 13.75 11.9167H17.4167C18.4292 11.9167 19.25 12.7375 19.25 13.75V17.4167C19.25 18.4292 18.4292 19.25 17.4167 19.25H13.75C12.7375 19.25 11.9167 18.4292 11.9167 17.4167V13.75ZM17.4167 13.75H13.75V17.4167H17.4167V13.75Z" fill="white"/>
+                                                            </svg> 
+                                                        </div>                                       
+                                                    </div>
+                        
+                                                    <div class="svg-container">
+                                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g opacity="0.5">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0833 18.3333C10.0833 17.8271 9.67293 17.4167 9.16667 17.4167H4.58333V4.58333H9.16667C9.67293 4.58333 10.0833 4.17293 10.0833 3.66667C10.0833 3.1604 9.67293 2.75 9.16667 2.75H4.58333C3.57081 2.75 2.75 3.57081 2.75 4.58333V17.4167C2.75 18.4292 3.57081 19.25 4.58333 19.25H9.16667C9.67293 19.25 10.0833 18.8396 10.0833 18.3333Z" fill="white"/>
+                                                            <path d="M19.9041 11.6422C19.9891 11.5557 20.0534 11.4565 20.0971 11.3509C20.1416 11.2436 20.1663 11.126 20.1667 11.0027L20.1667 11L20.1667 10.9973C20.166 10.7636 20.0765 10.5301 19.8982 10.3518L16.2315 6.68515C15.8735 6.32717 15.2931 6.32717 14.9352 6.68515C14.5772 7.04313 14.5772 7.62353 14.9352 7.98151L17.037 10.0833H8.25C7.74374 10.0833 7.33333 10.4937 7.33333 11C7.33333 11.5063 7.74374 11.9167 8.25 11.9167H17.037L14.9352 14.0185C14.5772 14.3765 14.5772 14.9569 14.9352 15.3148C15.2931 15.6728 15.8735 15.6728 16.2315 15.3148L19.8975 11.6488L19.9041 11.6422Z" fill="white"/>
+                                                            </g>
+                                                        </svg>                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-10">
+                                                <div class="sidebar-menu d-flex flex-column">
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                    </div>
+
+                                                    <p class="fw-bolder my-4">Welcome back, Vincent 👋</p>
+
+                                                    <div class="d-flex justify-content-between align-items-center mb-5">
+                                                        <h1 class="fw-bold">Tasks</h1>
+                        
+                                                        <div class="plus-container">
+                                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g opacity="0.4">
+                                                                <path d="M9 5L1 5" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
+                                                                <path d="M5 9L5 1" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
+                                                                </g>
+                                                            </svg>                                    
+                                                        </div>
+                                                    </div>
+                
+                                                    <ul class="menu-items list-unstyled d-flex flex-column gap-4">
+                                                        <li class="menu-item">
+                                                            <a class="active" href="#">All tasks(2)</a>
+                                                        </li>
+                
+                                                        <li class="menu-item">
+                                                            <a href="#">complete</a>
+                                                        </li>
+                
+                                                        <li class="menu-item">
+                                                            <a href="#">pending</a>
+                                                        </li>
+                
+                                                        <li class="menu-item">
+                                                            <a href="#">active</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </nav>
+
+
+
+                            <div class="d-flex justify-content-end align-items-center gap-2">
                                 <div>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M9.16671 3.66671C6.12914 3.66671 3.66671 6.12914 3.66671 9.16671C3.66671 12.2043 6.12914 14.6667 9.16671 14.6667C12.2043 14.6667 14.6667 12.2043 14.6667 9.16671C14.6667 6.12914 12.2043 3.66671 9.16671 3.66671ZM1.83337 9.16671C1.83337 5.11662 5.11662 1.83337 9.16671 1.83337C13.2168 1.83337 16.5 5.11662 16.5 9.16671C16.5 10.8614 15.9252 12.4218 14.9599 13.6635L19.8982 18.6019C20.2562 18.9598 20.2562 19.5402 19.8982 19.8982C19.5402 20.2562 18.9598 20.2562 18.6019 19.8982L13.6635 14.9599C12.4218 15.9252 10.8614 16.5 9.16671 16.5C5.11662 16.5 1.83337 13.2168 1.83337 9.16671Z" fill="#1C1D22"/>
@@ -144,18 +236,22 @@
                                         
                                         <span>Board view</span>
                                     </div>
-    
-                                    <div class="button-contianer d-flex align-items-center gap-2">
-                                        <div class="plus-container">
-                                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g opacity="0.4">
-                                                <path d="M9 5L1 5" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
-                                                <path d="M5 9L5 1" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
-                                                </g>
-                                            </svg>                                    
+
+                                    <div class="d-flex justify-content-between align-items-center gap-3">
+                                        
+
+                                        <div class="button-contianer d-flex align-items-center gap-2">
+                                            <div class="plus-container">
+                                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g opacity="0.4">
+                                                    <path d="M9 5L1 5" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
+                                                    <path d="M5 9L5 1" stroke="#1C1D22" stroke-width="2" stroke-linecap="round"/>
+                                                    </g>
+                                                </svg>                                    
+                                            </div>
+        
+                                            <button>add view</button>
                                         </div>
-    
-                                        <button>add view</button>
                                     </div>
                                 </div>
                             </div>
@@ -166,9 +262,9 @@
                             </div>
         
                             <div class="task-list text-center d-flex flex-column gap-1">
-                                <div class="header m-4 my-1">
+                                <div class="header d-none d-sm-block my-1 mx-4">
                                     <div class="row m-0 p-0">
-                                        <div class="col"><span></span></div>
+                                    <div class="col-2"><span></span></div>
                                     <div class="col"><span>fecha de creacion</span></div>
                                     <div class="col"><span>fecha de entrega</span></div>
                                     <div class="col"><span>status</span></div>
@@ -177,38 +273,52 @@
                                 </div>
 
                                 <div class="task-card mx-4">
-                                    <div class="row m-0 p-0 align-items-center">
-                                        <div class="col">
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <label class="circle-box text-start"></label>
-                                                <div>Task1</div>
+                                    <div class="row m-0 p-0 align-items-center g-3 g-sm-0">
+                                        <div class="col-6 col-sm-2 order-1 order-sm-1">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <label class="circle-box"></label>
+                                                <p class="my-auto">Task1</p>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-3 order-sm-2">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de creacion:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-4 order-sm-3">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de entrega:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col"><span class="active-task d-inline-block">active</span></div>
+                                        <div class="col-6 col-sm order-2 order-sm-4">
+                                            <div class="d-flex justify-content-end justify-content-sm-center align-items-center">
+                                                <p class="active-task my-auto">active</p>
+                                            </div>
+                                        </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-end align-items-center gap-4">
+                                        <div class="col-12 col-sm order-5">
+                                            <div class="d-flex justify-content-center justify-content-sm-end align-items-center gap-4">
                                                 <button>
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4549 5.41575C21.6471 5.70687 21.615 6.10248 21.3588 6.35876L12.1664 15.5511C12.0721 15.6454 11.9545 15.7128 11.8256 15.7465L7.99716 16.7465C7.87229 16.7791 7.74358 16.7784 7.62265 16.7476C7.49408 16.7149 7.37431 16.6482 7.27729 16.5511C7.08902 16.3629 7.01468 16.0889 7.08197 15.8313L8.08197 12.0028C8.11144 11.89 8.16673 11.7786 8.24322 11.6912L17.4697 2.46967C17.5504 2.38891 17.6477 2.32846 17.7536 2.29163C17.8321 2.26432 17.9153 2.25 18 2.25C18.1989 2.25 18.3897 2.32902 18.5303 2.46967L21.3588 5.2981C21.3954 5.33471 21.4274 5.37416 21.4549 5.41575ZM19.7678 5.82843L18 4.06066L9.48184 12.5788L8.85685 14.9716L11.2496 14.3466L19.7678 5.82843Z" fill="#FDBF46"/>
@@ -230,38 +340,52 @@
                                 </div>
 
                                 <div class="task-card mx-4">
-                                    <div class="row m-0 p-0 align-items-center">
-                                        <div class="col">
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <label class="circle-box text-start"></label>
-                                                <div>Task1</div>
+                                    <div class="row m-0 p-0 align-items-center g-3 g-sm-0">
+                                        <div class="col-6 col-sm-2 order-1 order-sm-1">
+                                            <div class="d-flex text-start text-sm-center align-items-center gap-2">
+                                                <label class="circle-box"></label>
+                                                <p class="my-auto">Task1</p>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-3 order-sm-2">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de creacion:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-4 order-sm-3">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de entrega:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col"><span class="active-task d-inline-block">active</span></div>
+                                        <div class="col-6 col-sm order-2 order-sm-4">
+                                            <div class="d-flex justify-content-end justify-content-sm-center align-items-start">
+                                                <p class="active-task my-auto">active</p>
+                                            </div>
+                                        </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-end align-items-center gap-4">
+                                        <div class="col-12 col-sm order-5">
+                                            <div class="d-flex justify-content-center justify-content-sm-end align-items-center gap-4">
                                                 <button>
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4549 5.41575C21.6471 5.70687 21.615 6.10248 21.3588 6.35876L12.1664 15.5511C12.0721 15.6454 11.9545 15.7128 11.8256 15.7465L7.99716 16.7465C7.87229 16.7791 7.74358 16.7784 7.62265 16.7476C7.49408 16.7149 7.37431 16.6482 7.27729 16.5511C7.08902 16.3629 7.01468 16.0889 7.08197 15.8313L8.08197 12.0028C8.11144 11.89 8.16673 11.7786 8.24322 11.6912L17.4697 2.46967C17.5504 2.38891 17.6477 2.32846 17.7536 2.29163C17.8321 2.26432 17.9153 2.25 18 2.25C18.1989 2.25 18.3897 2.32902 18.5303 2.46967L21.3588 5.2981C21.3954 5.33471 21.4274 5.37416 21.4549 5.41575ZM19.7678 5.82843L18 4.06066L9.48184 12.5788L8.85685 14.9716L11.2496 14.3466L19.7678 5.82843Z" fill="#FDBF46"/>
@@ -283,38 +407,52 @@
                                 </div>
 
                                 <div class="task-card mx-4">
-                                    <div class="row m-0 p-0 align-items-center">
-                                        <div class="col">
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <label class="circle-box text-start"></label>
-                                                <div>Task1</div>
+                                    <div class="row m-0 p-0 align-items-center g-3 g-sm-0">
+                                        <div class="col-6 col-sm-2 order-1 order-sm-1">
+                                            <div class="d-flex text-start text-sm-center align-items-center gap-2">
+                                                <label class="circle-box"></label>
+                                                <p class="my-auto">Task1</p>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-3 order-sm-2">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de creacion:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-4 order-sm-3">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de entrega:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col"><span class="pending-task d-inline-block">pending</span></div>
+                                        <div class="col-6 col-sm order-2 order-sm-4">
+                                            <div class="d-flex justify-content-end justify-content-sm-center align-items-start">
+                                                <p class="pending-task my-auto">active</p>
+                                            </div>
+                                        </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-end align-items-center gap-4">
+                                        <div class="col-12 col-sm order-5">
+                                            <div class="d-flex justify-content-center justify-content-sm-end align-items-center gap-4">
                                                 <button>
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4549 5.41575C21.6471 5.70687 21.615 6.10248 21.3588 6.35876L12.1664 15.5511C12.0721 15.6454 11.9545 15.7128 11.8256 15.7465L7.99716 16.7465C7.87229 16.7791 7.74358 16.7784 7.62265 16.7476C7.49408 16.7149 7.37431 16.6482 7.27729 16.5511C7.08902 16.3629 7.01468 16.0889 7.08197 15.8313L8.08197 12.0028C8.11144 11.89 8.16673 11.7786 8.24322 11.6912L17.4697 2.46967C17.5504 2.38891 17.6477 2.32846 17.7536 2.29163C17.8321 2.26432 17.9153 2.25 18 2.25C18.1989 2.25 18.3897 2.32902 18.5303 2.46967L21.3588 5.2981C21.3954 5.33471 21.4274 5.37416 21.4549 5.41575ZM19.7678 5.82843L18 4.06066L9.48184 12.5788L8.85685 14.9716L11.2496 14.3466L19.7678 5.82843Z" fill="#FDBF46"/>
@@ -336,38 +474,52 @@
                                 </div>
 
                                 <div class="task-card mx-4">
-                                    <div class="row m-0 p-0 align-items-center">
-                                        <div class="col">
-                                            <div class="d-flex gap-2 align-items-center">
-                                                <label class="circle-box text-start"></label>
-                                                <div>Task1</div>
+                                    <div class="row m-0 p-0 align-items-center g-3 g-sm-0">
+                                        <div class="col-6 col-sm-2 order-1 order-sm-1">
+                                            <div class="d-flex text-start text-sm-center align-items-center gap-2">
+                                                <label class="circle-box"></label>
+                                                <p class="my-auto">Task1</p>
                                             </div>
                                         </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-3 order-sm-2">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de creacion:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col my-auto">
-                                            <div class="d-flex justify-content-center gap-1">
-                                                <span>23</span>
-                                                <span>-</span>
-                                                <span>08</span>
-                                                <span>-</span>
-                                                <span>2023</span>
+                                        <div class="col-12 col-sm order-4 order-sm-3">
+                                            <div class="d-flex justify-content-between justify-content-sm-center gap-1">
+                                                <div>
+                                                    <span class="d-sm-none">fecha de entrega:</span>
+                                                </div>
+                                                <div>
+                                                    <span>23</span>
+                                                    <span>-</span>
+                                                    <span>08</span>
+                                                    <span>-</span>
+                                                    <span>2023</span>
+                                                </div>
                                             </div>
                                         </div>
     
-                                        <div class="col"><span class="complete-task d-inline-block">complete</span></div>
+                                        <div class="col-6 col-sm order-2 order-sm-4">
+                                            <div class="d-flex justify-content-end justify-content-sm-center align-items-start">
+                                                <p class="complete-task my-auto">active</p>
+                                            </div>
+                                        </div>
     
-                                        <div class="col">
-                                            <div class="d-flex justify-content-end align-items-center gap-4">
+                                        <div class="col-12 col-sm order-5">
+                                            <div class="d-flex justify-content-center justify-content-sm-end align-items-center gap-4">
                                                 <button>
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.4549 5.41575C21.6471 5.70687 21.615 6.10248 21.3588 6.35876L12.1664 15.5511C12.0721 15.6454 11.9545 15.7128 11.8256 15.7465L7.99716 16.7465C7.87229 16.7791 7.74358 16.7784 7.62265 16.7476C7.49408 16.7149 7.37431 16.6482 7.27729 16.5511C7.08902 16.3629 7.01468 16.0889 7.08197 15.8313L8.08197 12.0028C8.11144 11.89 8.16673 11.7786 8.24322 11.6912L17.4697 2.46967C17.5504 2.38891 17.6477 2.32846 17.7536 2.29163C17.8321 2.26432 17.9153 2.25 18 2.25C18.1989 2.25 18.3897 2.32902 18.5303 2.46967L21.3588 5.2981C21.3954 5.33471 21.4274 5.37416 21.4549 5.41575ZM19.7678 5.82843L18 4.06066L9.48184 12.5788L8.85685 14.9716L11.2496 14.3466L19.7678 5.82843Z" fill="#FDBF46"/>
